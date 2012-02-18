@@ -1,0 +1,15 @@
+mprofile README
+
+1.mprofileとは
+MySQLのSHOW FULL PROCESSLISTを取得して解析するツール.
+kazuhoさんのサイトを参考にして実装.
+http://developer.cybozu.co.jp/kazuho/2009/07/mysql-539d.html
+http://coderepos.org/share/browser/platform/mysql/mprofile
+
+kazuhoさんのはperlで書かれていたのでPHPで実装した。
+しかし、よくよく調べてみたらPHP版もあることが発覚したのでそちらの方がよいかも.
+
+2.使い方
+ - php mpdump.php > mdump.txt
+ - php mpfilter.php mpdump.txt > mpfilter.txt
+ - php mpreport.php mpfilter.txt > mpreport.txt
